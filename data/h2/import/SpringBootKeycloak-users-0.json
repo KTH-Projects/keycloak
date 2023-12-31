@@ -1,0 +1,101 @@
+{
+  "realm" : "SpringBootKeycloak",
+  "users" : [ {
+    "id" : "687e3d8c-fd04-46a3-bad1-3a22d19c365d",
+    "createdTimestamp" : 1703690197751,
+    "username" : "admin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "email" : "admin1@admin.se",
+    "credentials" : [ {
+      "id" : "92e954e6-efb6-4fdc-b9a3-4cb9e9fa298b",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1703690224851,
+      "secretData" : "{\"value\":\"CdIJOLrCIfK4C7EJN5d5G7b+WPY7HMkJn+fZipAv3yA=\",\"salt\":\"YXTR9ZvdW4ehCD4j1CEytA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-springbootkeycloak", "admin" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c3d1178a-0a68-4e66-a2c0-3d9e05be3962",
+    "createdTimestamp" : 1703952036998,
+    "username" : "balder",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "balder",
+    "email" : "balderr@email.com",
+    "credentials" : [ {
+      "id" : "e22caaf2-1005-4628-bfb6-d9f6beb53660",
+      "type" : "password",
+      "createdDate" : 1703952037208,
+      "secretData" : "{\"value\":\"B5xrTWlHBQdV03L8daG0jEx0d7Pzb/gCOud8D1psLy8=\",\"salt\":\"xaDVJYkvvawoOVc3VZfd6g==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-springbootkeycloak", "user", "patient" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "435f01f0-d5e5-4593-9768-66d614af8b75",
+    "createdTimestamp" : 1703951902157,
+    "username" : "john doe",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "John Doe",
+    "email" : "doctor@email.com",
+    "credentials" : [ {
+      "id" : "8ff25f13-f542-454b-9ecc-b0eaf6ebd33b",
+      "type" : "password",
+      "createdDate" : 1703951902268,
+      "secretData" : "{\"value\":\"tkFtbxpOX+RlRRLBLPHrvsPwCFf8tZ2pnXaEIfFn+ds=\",\"salt\":\"Jth5mdI+Plh8W0ZP6NgPsQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-springbootkeycloak", "staff", "user", "doctor" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "dfd3313b-d0ca-4f63-a25d-f291997118ce",
+    "createdTimestamp" : 1703580181888,
+    "username" : "service-account-admin-cli",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "serviceAccountClientId" : "admin-cli",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-springbootkeycloak" ],
+    "clientRoles" : {
+      "realm-management" : [ "realm-admin", "manage-realm", "manage-clients", "manage-events", "manage-users", "create-client" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "86f483e3-d61f-4598-9343-7cda44647859",
+    "createdTimestamp" : 1703602427669,
+    "username" : "service-account-app",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "serviceAccountClientId" : "app",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-springbootkeycloak", "user" ],
+    "clientRoles" : {
+      "app" : [ "uma_protection" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
